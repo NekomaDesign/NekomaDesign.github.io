@@ -545,6 +545,27 @@
   }
 
   /* ------------------------------------------------------------------
+     06 ABOUT — 3D tilt + glare on the profile card
+     ------------------------------------------------------------------ */
+  function initPlayer() {
+    const card = $('.pcard');
+    if (!card || !FINE || REDUCED) return;
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      card.classList.add('is-tilting');
+      card.style.setProperty('--ry', ((x - 0.5) * 14).toFixed(2) + 'deg');
+      card.style.setProperty('--rx', (-(y - 0.5) * 11).toFixed(2) + 'deg');
+      card.style.setProperty('--gx', (x * 100).toFixed(1) + '%');
+      card.style.setProperty('--gy', (y * 100).toFixed(1) + '%');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('is-tilting');
+      card.style.setProperty('--rx', '0deg'); card.style.setProperty('--ry', '0deg');
+    });
+  }
+
+  /* ------------------------------------------------------------------
      07 CAREER accordion
      ------------------------------------------------------------------ */
   function initRundown() {
@@ -825,7 +846,7 @@
      ------------------------------------------------------------------ */
   function initTextSpot() {
     if (!FINE) return;
-    const HOSTS = '.wordmark, .hero__lede, .intro__text, .stat__title, .sec-head__title, .player__bio, .player__attrs dd, .rrow__role, .rrow__house, .rrow__lead, .rrow__notes li, .contact__title, .contact__sub, .case__title, .case__desc, .profile__name';
+    const HOSTS = '.wordmark, .hero__lede, .intro__text, .stat__title, .sec-head__title, .player__bio, .player__attrs dd, .rrow__role, .rrow__house, .rrow__lead, .rrow__notes li, .contact__title, .contact__sub, .case__title, .case__desc, .pcard__name';
     const LEAF = '.tx, .w, .ch';
     let host = null, leaves = [], raf = 0;
 
@@ -909,6 +930,7 @@
     initArchive();
     initWall();
     initShowroom();
+    initPlayer();
     initRundown();
     initContact();
     initCase();
