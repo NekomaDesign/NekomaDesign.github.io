@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nekoma — Hứa Hoàng Tiến Đạt · Senior Multimedia Designer</title>
+  <meta name="description" content="Nekoma is the studio name of Hứa Hoàng Tiến Đạt — senior multimedia designer and design team leader in Ho Chi Minh City. Key visuals, broadcast motion, 3D stages and trophies for esports, gaming and Web3 brands.">
+  <meta name="theme-color" content="#0A0A0B">
+  <meta name="author" content="Hứa Hoàng Tiến Đạt">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nekoma — Senior Multimedia Designer">
+  <meta property="og:description" content="Key visuals, broadcast motion, 3D stages & trophies for esports, gaming and Web3 brands. Ho Chi Minh City.">
+  <meta property="og:image" content="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c01a36238486069.691bf9c8a5b9f.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://mir-s3-cdn-cf.behance.net">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..800&family=Martian+Mono:wdth,wght@87.5..112.5,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- ============ SVG sprite ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19L19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 16V4h12" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v17M5 13l7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 10V4h6M20 14v6h-6M4 4l7 7M20 20l-7-7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  </svg>
+
+  <!-- ============ Global layers ============ -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="safe-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+  <!-- ============ Loader ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__word"><span class="loader__base">NEKOMA</span><span class="loader__fill">NEKOMA</span></div>
+    <span class="loader__pct mono">000</span>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <!-- ============ Top bar ============ -->
+  <header class="hud">
+    <a class="brand" href="#top" aria-label="Nekoma — back to top"><span class="brand__name">NEKOMA</span><i class="brand__dot"></i></a>
+    <div class="hud__right">
+      <a class="hud__link mono" href="https://www.behance.net/NekomaDesign" target="_blank" rel="noopener">Behance <svg><use href="#i-arrow"/></svg></a>
+      <a class="hud__link mono" href="assets/cv/HuaHoangTienDat-CV-EN.pdf" target="_blank" rel="noopener">CV <svg><use href="#i-arrow"/></svg></a>
+      <a class="hud__cta" href="#contact">Let's talk</a>
+    </div>
+  </header>
+
+  <!-- ============ Quick-jump taskbar ============ -->
+  <nav class="taskbar" aria-label="Jump to section">
+    <button class="taskbar__arrow" data-dir="-1" aria-label="Previous section"><svg><use href="#i-left"/></svg></button>
+    <div class="taskbar__items">
+      <a href="#top" data-step="01"><b>01</b><span>Home</span></a>
+      <a href="#work" data-step="02"><b>02</b><span>Work</span></a>
+      <a href="#archive" data-step="03"><b>03</b><span>Archive</span></a>
+      <a href="#onair" data-step="04"><b>04</b><span>Motion</span></a>
+      <a href="#stage" data-step="05"><b>05</b><span>3D</span></a>
+      <a href="#player" data-step="06"><b>06</b><span>About</span></a>
+      <a href="#career" data-step="07"><b>07</b><span>Career</span></a>
+      <a href="#contact" data-step="08"><b>08</b><span>Contact</span></a>
+    </div>
+    <button class="taskbar__arrow" data-dir="1" aria-label="Next section"><svg><use href="#i-right"/></svg></button>
+    <i class="taskbar__progress" aria-hidden="true"></i>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============ 01 HOME ============ -->
+    <section class="hero" id="top" data-step="01">
+      <div class="hero__stage">
+        <div class="reel" aria-hidden="true">
+          <div class="reel__frames"></div>
+          <div class="reel__l3"><span class="reel__title" data-reel-title>Flazers Day 2025</span></div>
+          <div class="reel__count mono"><span data-reel-idx>01</span> / <span data-reel-total>08</span></div>
+        </div>
+
+        <div class="hero__meta hero__meta--l">
+          <p class="hero__name mono"><span>Hua Hoang Tien Dat</span></p>
+          <p class="mono dim">Senior Multimedia Designer<br>Design Team Leader</p>
+        </div>
+        <div class="hero__meta hero__meta--r mono"><p>Portfolio 2021 — 2026</p></div>
+
+        <div class="hero__mid">
+          <p class="hero__lede">
+            <span>Art Direction, Graphic Design 2D - 3D, Motion Graphics</span>
+            <span>Advertising Design, Branding Design, Event Key Visual</span>
+            <em class="serif">Born to creative.</em>
+          </p>
+          <div class="hero__frame" aria-hidden="true"><i></i><i></i><i></i><i></i><span class="hero__frame-tag mono">Featured projects</span></div>
+        </div>
+
+        <h1 class="wordmark" aria-label="Nekoma"><span class="wordmark__inner" aria-hidden="true"><span class="ch">N</span><span class="ch">E</span><span class="ch">K</span><span class="ch">O</span><span class="ch">M</span><span class="ch">A</span></span></h1>
+
+        <div class="hero__foot">
+          <a class="hero__cue mono" href="#intro"><svg><use href="#i-down"/></svg><span>Scroll to enter</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO / MANIFESTO ============ -->
+    <section class="intro" id="intro" data-step="01">
+      <div class="intro__head mono"><span>01 — Manifesto</span><span>5 yrs · 2021 → 2026</span></div>
+      <p class="intro__text">
+        I'm Đạt —<mark> a senior multimedia designer</mark> who turns briefs into visuals that look sharp and work hard. Key visuals, motion, 3D and video, crafted from the first sketch to the <em class="serif">final frame.</em>
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <b class="stat__num" data-count="5" data-suffix="+">05+</b>
+          <div class="stat__text"><span class="stat__title">Years of experience</span><span class="stat__label mono">Multimedia Design — Key Visual, Motion, 3D, Video</span></div>
+        </div>
+        <div class="stat">
+          <b class="stat__num" data-count="1">01</b>
+          <div class="stat__text"><span class="stat__title">Year as Design Team Leader</span><span class="stat__label mono">Art direction, mentoring &amp; team workflow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 SELECTED WORK ============ -->
+    <section class="work" id="work" data-step="02">
+      <div class="sec-head">
+        <span class="sec-head__idx mono">02 — The highlights</span>
+        <h2 class="sec-head__title">Design Collection <em class="serif">Projects.</em></h2>
+        <p class="sec-head__note mono">Explore a collection of high-quality work</p>
+      </div>
+      <div class="work__pin">
+        <div class="work__track"></div>
+        <div class="timeline" aria-hidden="true">
+          <div class="timeline__head mono"><span>Highlights</span><span class="timeline__count">01 / 08</span></div>
+          <div class="timeline__ruler"></div>
+          <div class="timeline__clips"></div>
+          <div class="timeline__playhead"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 ARCHIVE ============ -->
+    <section class="archive" id="archive" data-step="03">
+      <div class="sec-head">
+        <span class="sec-head__idx mono">03 — Archive</span>
+        <h2 class="sec-head__title">Every project, <em class="serif">creativity and excellence.</em></h2>
+        <a class="sec-head__note mono link" href="https://www.behance.net/NekomaDesign" target="_blank" rel="noopener">Also on Behance <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter projects"></div>
+      <div class="archive__cols mono" aria-hidden="true"><span>No.</span><span>Project</span><span>Client</span><span>Discipline</span><span>Year</span></div>
+      <ol class="archive__list"></ol>
+      <div class="archive__preview" aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <!-- ============ 04 MOTION & VIDEO ============ -->
+    <section class="onair" id="onair" data-step="04">
+      <div class="sec-head">
+        <span class="sec-head__idx mono">04 — Motion &amp; video</span>
+        <h2 class="sec-head__title">Motion &amp; video, <em class="serif">frame by frame.</em></h2>
+      </div>
+      <div class="onair__bar">
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" role="tab" aria-selected="true" data-src="motion">Motion graphics <sup class="mono">31</sup></button>
+          <button class="tab" role="tab" aria-selected="false" data-src="video">Video editing <sup class="mono">26</sup></button>
+        </div>
+        <span class="onair__hint mono">Hover to preview · click to play</span>
+      </div>
+      <div class="mv">
+        <button class="mv__pgm" data-cursor="Play">
+          <img class="mv__pgm-img" alt="">
+          <span class="mv__name mv__name--pgm mv__pgm-title">—</span>
+          <span class="mv__pgm-play"><svg><use href="#i-play"/></svg></span>
+        </button>
+        <div class="mv__grid"></div>
+      </div>
+      <div class="onair__more"><button class="btn btn--ghost mv__more mono">Show all</button>
+        <a class="btn btn--ghost mono" href="https://drive.google.com/drive/folders/1dDGHTkXmzqH0Z-xUjhbwCuj223zRyfZm?usp=sharing" target="_blank" rel="noopener">Full Drive archive <svg><use href="#i-arrow"/></svg></a></div>
+    </section>
+
+    <!-- ============ 05 3D ============ -->
+    <section class="stage" id="stage" data-step="05">
+      <div class="sec-head">
+        <span class="sec-head__idx mono">05 — 3D &amp; spatial</span>
+        <h2 class="sec-head__title">From 3D design <em class="serif">to reality.</em></h2>
+      </div>
+      <div class="show">
+        <aside class="show__meta">
+          <div class="show__count"><b class="show__num">01</b><span class="mono">/ 10</span></div>
+          <div class="show__nav">
+            <button class="show__btn" data-dir="-1" aria-label="Previous 3D set"><svg><use href="#i-left"/></svg></button>
+            <button class="show__btn" data-dir="1" aria-label="Next 3D set"><svg><use href="#i-right"/></svg></button>
+          </div>
+        </aside>
+        <div class="show__view">
+          <button class="show__main" data-cursor="Expand" aria-label="Open full-screen viewer">
+            <img alt="">
+            <span class="show__title">—</span>
+            <span class="show__expand"><svg><use href="#i-expand"/></svg></span>
+          </button>
+          <div class="show__thumbs"></div>
+        </div>
+        <ol class="show__list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 06 ABOUT ============ -->
+    <section class="player" id="player" data-step="06">
+      <div class="sec-head">
+        <span class="sec-head__idx mono">06 — About</span>
+        <h2 class="sec-head__title">The designer <em class="serif">behind</em> the work.</h2>
+      </div>
+      <div class="player__grid">
+        <figure class="profile">
+          <div class="profile__img"><img src="assets/img/dat-portrait.jpg" alt="Portrait of Hứa Hoàng Tiến Đạt" loading="lazy" width="1100" height="1651"></div>
+          <figcaption class="profile__cap">
+            <span class="profile__name">Hứa Hoàng Tiến Đạt</span>
+            <span class="profile__role mono">Senior Multimedia Designer · Design Team Leader</span>
+            <span class="profile__exp"><span><b>05+</b> Years of experience</span><span><b>01</b> Year as Team Leader</span></span>
+          </figcaption>
+        </figure>
+        <div class="player__info">
+          <p class="player__bio">I have 5 years of experience in Multimedia Design &amp; 1 year of experience as Design Team Leader working for international and local clients. Strong aesthetic mindset, and use purposeful design to create outstanding and effective products. I have experience in management and creative direction from concept to execution. I optimize operational processes and work quality for myself and my team (workflow, AI, planning, etc.). <em class="serif">Ready for new challenges.</em></p>
+          <dl class="player__attrs">
+            <div><dt class="mono">Main role</dt><dd>Art Direction, Graphic Design 2D - 3D, Motion Graphics, Advertising Design, Branding Design, Event Key Visual</dd></div>
+            <div><dt class="mono">Also</dt><dd>Client Communication · Management &amp; Training · AI Creative &amp; Workflow</dd></div>
+            <div><dt class="mono">Education</dt><dd>DAS — Design Anthropology School · Multi-disciplinary Designer <span class="pill mono">Now</span><br>Lạc Hồng University · B.Sc. Information Technology (2019 – 2024)</dd></div>
+          </dl>
+          <div class="loadout">
+            <div class="loadout__head mono"><span>Toolkit</span><span>6 tools</span></div>
+            <div class="loadout__slots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 CAREER ============ -->
+    <section class="rundown" id="career" data-step="07">
+      <div class="sec-head">
+        <span class="sec-head__idx mono">07 — Career</span>
+        <h2 class="sec-head__title">Career, <em class="serif">so far.</em></h2>
+        <a class="sec-head__note mono link" href="assets/cv/HuaHoangTienDat-CV-EN.pdf" target="_blank" rel="noopener">Download CV (PDF) <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="rundown__table">
+        <div class="rundown__cols mono" aria-hidden="true"><span>No.</span><span>Period</span><span>Role</span><span>Company</span><span>Type</span><span></span></div>
+        <ol class="rundown__list"></ol>
+      </div>
+    </section>
+
+    <!-- ============ 08 CONTACT ============ -->
+    <section class="contact" id="contact" data-step="08">
+      <div class="contact__top mono"><span>08 — Contact</span><span>Ho Chi Minh City · VN</span></div>
+      <h2 class="contact__title"><span class="line"><span>Let's design</span></span><span class="line"><span>what's <em class="serif">next.</em></span></span></h2>
+      <p class="contact__sub">Open to Senior Designer &amp; Design Team Leader roles</p>
+      <div class="contact__grid">
+        <div class="contact__mail">
+          <span class="mono">Write me</span>
+          <a class="contact__email" href="mailto:shinodat9@gmail.com" data-cursor="Mail">shinodat9@gmail.com</a>
+          <button class="copy mono" data-copy="shinodat9@gmail.com"><svg><use href="#i-copy"/></svg><span>Copy email</span></button>
+        </div>
+        <ul class="contact__links">
+          <li><a href="https://www.behance.net/NekomaDesign" target="_blank" rel="noopener"><span class="mono">01</span>Behance<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.instagram.com/nekoma.vn/" target="_blank" rel="noopener"><span class="mono">02</span>Instagram<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.facebook.com/Nekoma.vn" target="_blank" rel="noopener"><span class="mono">03</span>Facebook<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://t.me/nekoma114" target="_blank" rel="noopener"><span class="mono">04</span>Telegram<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="tel:+84388380114"><span class="mono">05</span>+84 388 380 114<svg><use href="#i-arrow"/></svg></a></li>
+        </ul>
+        <div class="contact__cv">
+          <span class="mono">Resume</span>
+          <a class="btn btn--ink mono" href="assets/cv/HuaHoangTienDat-CV-EN.pdf" target="_blank" rel="noopener">Curriculum Vitae English <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ink-ghost mono" href="assets/cv/HuaHoangTienDat-CV-VN.pdf" target="_blank" rel="noopener">Curriculum Vitae Vietnamese <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__mark" aria-hidden="true">NEKOMA</div>
+    <div class="footer__row mono">
+      <span>© 2026 Hứa Hoàng Tiến Đạt</span>
+      <span>Designed &amp; directed in Saigon</span>
+      <span class="footer__fine">All client work © its respective owners</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ Case study overlay ============ -->
+  <div class="case" role="dialog" aria-modal="true" aria-label="Case study" aria-hidden="true">
+    <div class="case__bar mono">
+      <button class="case__close" aria-label="Close case study"><svg><use href="#i-left"/></svg><span>Back</span></button>
+      <a class="case__behance" href="#" target="_blank" rel="noopener">View on Behance <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="case__scroll" data-lenis-prevent>
+      <header class="case__head">
+        <span class="case__kind mono"></span>
+        <h3 class="case__title"></h3>
+        <dl class="case__meta">
+          <div><dt class="mono">Client</dt><dd class="case__client"></dd></div>
+          <div><dt class="mono">Year</dt><dd class="case__year"></dd></div>
+          <div><dt class="mono">Role</dt><dd class="case__disc"></dd></div>
+          <div><dt class="mono">Tools</dt><dd class="case__tools"></dd></div>
+        </dl>
+        <p class="case__desc"></p>
+      </header>
+      <div class="case__hero"><img alt=""></div>
+      <div class="case__gallery"></div>
+      <div class="case__end">
+        <a class="btn btn--light mono case__behance2" href="#" target="_blank" rel="noopener">Full project on Behance <svg><use href="#i-arrow"/></svg></a>
+        <button class="case__next" data-cursor="Next"><span class="mono">Next project</span><b class="case__next-title"></b></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Video modal ============ -->
+  <div class="vmodal" role="dialog" aria-modal="true" aria-label="Video player" aria-hidden="true">
+    <div class="vmodal__inner">
+      <div class="vmodal__bar mono"><b class="vmodal__title"></b><span class="vmodal__actions"><a class="vmodal__open" href="#" target="_blank" rel="noopener">Open in Drive <svg><use href="#i-arrow"/></svg></a><button class="vmodal__close" aria-label="Close video"><svg><use href="#i-close"/></svg></button></span></div>
+      <div class="vmodal__screen"><iframe title="Video" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <!-- ============ Lightbox ============ -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <div class="lightbox__bar mono"><span class="lightbox__title"></span><span class="lightbox__count"></span><button class="lightbox__close" aria-label="Close viewer"><svg><use href="#i-close"/></svg></button></div>
+    <div class="lightbox__stage"><img alt=""></div>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous image"><svg><use href="#i-left"/></svg></button>
+    <button class="lightbox__nav lightbox__next" aria-label="Next image"><svg><use href="#i-right"/></svg></button>
+    <div class="lightbox__thumbs"></div>
+  </div>
+
+  <div class="toast mono" role="status" aria-live="polite"></div>
+
+  <noscript><style>.loader{display:none}</style></noscript>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

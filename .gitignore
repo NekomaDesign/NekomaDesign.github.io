@@ -1,0 +1,9 @@
+# original CV exports (published copies live in assets/cv/)
+/CV _HuaHoangTienDat_*.pdf
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.claude/
+node_modules/
