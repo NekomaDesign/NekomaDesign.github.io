@@ -507,7 +507,7 @@ img[data-state="wait"] { opacity: 0 !important; }
 .pcard-wrap { perspective: 1200px; position: sticky; top: calc(var(--hud-h) + 30px); }
 .pcard {
   --rx: 0deg; --ry: 0deg; --gx: 50%; --gy: 30%;
-  position: relative; aspect-ratio: 3 / 4; max-width: 470px; overflow: hidden; border-radius: 16px;
+  position: relative; aspect-ratio: 3 / 4; max-width: 520px; overflow: hidden; border-radius: 16px;
   background: var(--ink); color: var(--bone);
   transform: rotateX(var(--rx)) rotateY(var(--ry)); transform-style: preserve-3d; transition: transform .6s var(--ease);
   box-shadow: 0 40px 80px -30px rgba(10,10,11,.55), 0 0 0 1px rgba(10,10,11,.4);
@@ -716,7 +716,35 @@ img[data-state="wait"] { opacity: 0 !important; }
   .contact__mail { grid-column: 1 / -1; }
 }
 
+/* tablet portrait / narrow windows: stack the tagline above the showreel frame */
+@media (max-width: 900px) {
+  .hero__mid { grid-template-columns: 1fr; align-content: end; gap: 46px; padding: 2vh 0 3vh; }
+  .hero__frame { justify-self: start; height: auto; width: min(100%, calc(42svh * 16 / 9)); }
+  .hero__lede { font-size: clamp(16px, 2.6vw, 22px); }
+}
+
+/* landscape phones & very short windows */
+@media (max-height: 520px) and (min-width: 761px) {
+  .hero__stage { padding-top: calc(var(--hud-h) + 6px); padding-bottom: calc(var(--tb-h) + 18px); }
+  .hero__meta--l .dim { display: none; }
+  .hero__lede { font-size: 14px; }
+  .hero__mid { grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 3vw; padding: 1vh 0 1.6vh; }
+  .hero__frame { justify-self: end; width: auto; height: min(29svh, 26vw); }
+  .hero__meta--r { display: none; }
+  .hero__frame-tag { display: none; }
+  .wordmark { font-size: min(16.2vw, 22svh); }
+  .work__pin { padding-bottom: calc(var(--tb-h) + 10px); }
+  .timeline { margin-top: 8px; }
+  .timeline__ruler, .timeline__head { display: none; }
+  .wcard { --cardh: min(58svh, 36vw); }
+}
+
 @media (max-width: 760px) {
+  .pcard__ign { font-size: clamp(32px, 10.5vw, 48px); top: 46px; right: 12px; }
+  .pcard__top { left: 18px; right: 18px; top: 18px; }
+  .pcard__bottom { left: 18px; right: 18px; bottom: 18px; }
+  .pcard__role { font-size: 10px; }
+  .pcard__stats b { font-size: 22px; }
   :root { --hud-h: 52px; --tb-h: 48px; }
   .hud__link { display: none; }
   .safe-frame { inset: 6px; }

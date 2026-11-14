@@ -790,7 +790,7 @@
       });
       if (!REDUCED) {
         $$('.sec-head__title').forEach((t) => gsap.from(t, { yPercent: 28, opacity: 0, duration: 1.2, ease: 'expo.out', scrollTrigger: { trigger: t, start: 'top 88%' } }));
-        $$('.sec-head__idx').forEach((t) => gsap.from(t, { opacity: 0, x: -20, duration: 0.9, ease: 'expo.out', scrollTrigger: { trigger: t, start: 'top 90%' } }));
+        $$('.sec-head__idx').forEach((t) => gsap.from(t, { opacity: 0, x: -10, duration: 0.9, ease: 'expo.out', scrollTrigger: { trigger: t, start: 'top 90%' } }));
       }
     }
     document.addEventListener('click', (e) => {
