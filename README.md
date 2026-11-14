@@ -1,7 +1,20 @@
 # NEKOMA — Portfolio of Hứa Hoàng Tiến Đạt
 
 Senior Multimedia Designer · Design Team Leader · Ho Chi Minh City
-A static site with no build step. Open `index.html` in a browser, or drag the whole folder onto Netlify / Vercel / GitHub Pages.
+A static site with no build step.
+
+**Live:** https://nekomadesign.github.io (GitHub Pages, served from the `main` branch of `NekomaDesign/NekomaDesign.github.io`)
+
+### Updating the live site
+After editing any file, run these commands in this folder:
+
+```bash
+git add -A
+git commit -m "Update portfolio"
+git push
+```
+
+GitHub Pages republishes automatically within a minute or two. To preview locally, open `index.html` in a browser.
 
 ---
 
