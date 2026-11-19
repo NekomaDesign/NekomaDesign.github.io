@@ -14,7 +14,9 @@
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   const HAS_GSAP = !!(window.gsap && window.ScrollTrigger);
-  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Effects run the same on every machine (the owner wants an identical experience even when
+  // Windows 'animation effects' is turned off, which reports prefers-reduced-motion).
+  const REDUCED = false;
   const FINE = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   let lenis = null;

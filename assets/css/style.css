@@ -849,7 +849,4 @@ img[data-state="wait"] { opacity: 0 !important; }
   .lightbox__nav { top: auto; bottom: 120px; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .grain, .tally, .hero__cue svg { animation: none !important; }
-  *, *::before, *::after { transition-duration: .01ms !important; }
-}
+
